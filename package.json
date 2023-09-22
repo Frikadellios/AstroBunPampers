@@ -1,0 +1,74 @@
+{
+  "name": "aquapump",
+  "description": "Aquapumpers",
+  "keywords": [],
+  "author": {
+    "name": "Hrihorii Ilin",
+    "email": "devopsick@pm.me"
+  },
+  "license": "MIT",
+  "type": "module",
+  "version": "1.0.1",
+  "engines": {
+    "node": "v18.17.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead"
+  ],
+  "scripts": {
+    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "editorconfig": "editorconfig-checker",
+    "check": "astro check",
+    "dev": "astro dev",
+    "start": "astro start",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.2.0",
+    "@astrojs/partytown": "^2.0.0",
+    "@astrojs/react": "^3.0.2",
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/tailwind": "^5.0.0",
+    "@fontsource-variable/inter": "^5.0.8",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^3.1.2",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "daisyui": "^3.7.7",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.6",
+    "figlet": "^1.6.0",
+    "postcss-preset-env": "^9.1.4",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "prisma": "^5.3.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.2.2",
+    "@types/figlet": "^1.5.6",
+    "@typescript-eslint/parser": "^6.7.2",
+    "bun-types": "^1.0.3",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "^8.50.0",
+    "eslint-plugin-astro": "^0.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^3.0.3",
+    "prettier-config-standard": "^7.0.0",
+    "prettier-plugin-astro": "^0.12.0"
+  },
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

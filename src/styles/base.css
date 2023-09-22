@@ -1,0 +1,142 @@
+@config "../../tailwind.config.cjs";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { 
+    background-color: #111418; 
+  }
+  h1 {
+    @apply text-5xl bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent ;
+  }
+
+  h2 {
+    @apply bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent text-3xl sm:text-4xl;
+  }
+
+  h3 {
+    @apply my-5 mx-5 mt-6 text-gray-400;
+  }
+
+  h4 {
+    @apply my-5 mx-5 block w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent;
+  }
+  p {
+    @apply mx-auto my-4 w-full max-w-xl bg-transparent leading-relaxed tracking-wide text-gray-400;
+  }
+
+  .text-color {
+    @apply  animate-[animate8345_9s_linear_infinite] ;
+    background: linear-gradient(to right, #2d60ec, #3ccfda);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .wrap {
+    @apply flex items-center justify-center py-10 px-4 mb-5 mt-5;
+  }
+  .circle {
+    @apply w-[300px] h-[300px] overflow-hidden animate-[morph_5s_linear_infinite] rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%];
+    background: transparent;
+  }
+  .circle img {
+    @apply w-full;
+  }
+  .circle1 {
+    @apply w-[250px] h-[250px] overflow-hidden animate-[morph_5s_linear_infinite] rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%];
+    background: transparent;
+  }
+  
+  
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  .loading {
+    animation: loading6454 1.75s ease infinite;
+   }
+   @keyframes loading6454 {
+    0%, 100% {
+     transform: translateY(0);
+    }
+   
+    50% {
+     transform: translateY(-10px);
+    }
+   }
+   .float {
+    animation: float612 2.4s ease-in-out infinite;
+   }
+   @keyframes float612 {
+    0% {
+      transform: translatey(0px);
+    }
+  
+    50% {
+      transform: translatey(-10px);
+    }
+  
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  @-webkit-keyframes animate-svg-stroke-1 {
+    0% {
+      stroke-dashoffset: 878.4119873046875px;
+      stroke-dasharray: 878.4119873046875px;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 878.4119873046875px;
+    }
+  }
+  
+  @keyframes animate-svg-stroke-1 {
+    0% {
+      stroke-dashoffset: 878.4119873046875px;
+      stroke-dasharray: 878.4119873046875px;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 878.4119873046875px;
+    }
+  }
+  
+  .lineanimate-1 {
+    -webkit-animation: animate-svg-stroke-1 3s cubic-bezier(0.77, 0, 0.175, 1) 0s infinite alternate-reverse;
+            animation: animate-svg-stroke-1 3s cubic-bezier(0.77, 0, 0.175, 1) 0s infinite alternate-reverse;
+  }
+  
+  
+  @keyframes morph{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+
+  @keyframes animate8345 {
+    0%,100% {
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+}
